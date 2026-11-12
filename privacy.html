@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#2B0848">
+    <title data-ar="سياسة الخصوصية | منصة سهالة" data-en="Privacy Policy | Sahala Platform">سياسة الخصوصية | منصة سهالة</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7">
+    <link rel="manifest" href="/manifest.json">
+    <meta property="og:image" content="https://cdn.sahalacompany.com/sahala.webp">
+    <meta name="twitter:image" content="https://cdn.sahalacompany.com/sahala.webp">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Admin Theme Central Controller -->
+    <link rel="stylesheet" href="admin-theme.min.css">
+    <style>
+        :root {
+            --primary: var(--primary-color);
+            --bg: var(--bg-dark);
+            --card: var(--bg-card-glass);
+            --text: var(--text-white);
+            --muted: var(--text-muted);
+            --transition: var(--transition);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text);
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 36px 18px;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 820px;
+            margin: auto 0;
+            padding: 3.5rem 3rem;
+            background: #22073e;
+            border-radius: 24px;
+            border: 2px solid #d97706 !important;
+            box-shadow: 0 15px 45px rgba(217, 119, 6, 0.18), 0 0 20px rgba(217, 119, 6, 0.12) !important;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden !important;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 25px 60px rgba(217, 119, 6, 0.3) !important;
+            border-color: #b45309 !important;
+        }
+
+        body.light-mode .container,
+        [data-theme="light"] .container {
+            background: rgba(255, 255, 255, 0.98) !important;
+            border: 2px solid #d97706 !important;
+            box-shadow: 0 15px 45px rgba(217, 119, 6, 0.18) !important;
+        }
+
+        /* Dark Purple Header Banner - Flush with container top, right, and left */
+        .brand-banner-header {
+            background: #2B0848 !important;
+            background: linear-gradient(180deg, #24073d 0%, #2B0848 100%) !important;
+            border-bottom: none !important;
+            margin: -3.5rem -3rem 2.4rem -3rem !important;
+            padding: 22px 20px 20px 20px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            box-shadow: none !important;
+            position: relative !important;
+            z-index: 2 !important;
+        }
+
+        .brand-banner-header .brand-logo {
+            max-width: 175px !important;
+            width: 100% !important;
+            height: auto !important;
+            max-height: 52px !important;
+            object-fit: contain !important;
+            margin: 0 !important;
+            filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5)) !important;
+            display: block !important;
+        }
+
+        /* Hide Theme and Language Buttons completely as requested */
+        .theme-toggle-btn,
+        .lang-pill-left,
+        .lang-pill,
+        #themeToggleBtn,
+        #langBtn {
+            display: none !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            opacity: 0 !important;
+        }
+
+        .lang-pill-left {
+            position: absolute;
+            top: 24px;
+            left: 24px !important;
+            right: auto !important;
+            z-index: 10;
+        }
+
+        body[dir="rtl"] .lang-pill-left {
+            left: 24px !important;
+            right: auto !important;
+        }
+
+        body[dir="ltr"] .lang-pill-left {
+            right: 24px !important;
+            left: auto !important;
+        }
+
+        .lang-pill {
+            background: rgba(217, 119, 6, 0.08) !important;
+            border: 1px solid #d97706 !important;
+            color: var(--icon-purple, #d97706) !important;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.82rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .lang-pill:hover {
+            background: #d97706 !important;
+            color: #ffffff !important;
+            box-shadow: 0 0 18px rgba(217, 119, 6, 0.45) !important;
+            transform: translateY(-2px) scale(1.04);
+        }
+
+        .lang-pill:active {
+            transform: translateY(0) scale(0.94);
+        }
+
+        .lang-pill svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--icon-purple, #d97706) !important;
+        }
+
+        .lang-pill:hover svg {
+            fill: #ffffff !important;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.6rem;
+            padding: 0 10px;
+        }
+
+        .brand-logo {
+            max-width: 170px;
+            width: 100%;
+            height: auto;
+            max-height: 52px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 2px 8px rgba(217, 119, 6, 0.25));
+            display: inline-block;
+        }
+
+        h1 {
+            color: var(--icon-purple, #d97706) !important;
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+
+        .last-update {
+            font-size: 0.86rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+
+        section {
+            margin-bottom: 2.2rem;
+        }
+
+        section:last-of-type {
+            margin-bottom: 1.8rem;
+        }
+
+        .section-heading {
+            color: var(--icon-purple, #d97706) !important;
+            font-size: 1.25rem;
+            margin-bottom: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            line-height: 1.4;
+        }
+
+        .section-icon-badge {
+            width: 32px;
+            height: 32px;
+            border-radius: 9px;
+            background: rgba(217, 119, 6, 0.12);
+            border: 1px solid rgba(217, 119, 6, 0.28);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--icon-purple, #d97706) !important;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .section-heading:hover .section-icon-badge {
+            background: rgba(217, 119, 6, 0.24);
+            border-color: #d97706;
+            transform: scale(1.06);
+        }
+
+        .section-heading-text {
+            flex: 1;
+            min-width: 0;
+            word-break: break-word;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 0.94rem;
+            line-height: 1.8;
+            text-align: right;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body[dir="ltr"] p {
+            text-align: left;
+        }
+
+        .help-center-cta {
+            margin-top: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .inline-help-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: rgba(217, 119, 6, 0.12);
+            border: 1.5px solid #d97706;
+            color: var(--icon-purple, #d97706) !important;
+            padding: 8px 18px;
+            border-radius: 24px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 3px 12px rgba(217, 119, 6, 0.15);
+            user-select: none;
+        }
+
+        .inline-help-btn:hover {
+            background: #d97706 !important;
+            color: #ffffff !important;
+            box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .inline-help-btn:active {
+            transform: translateY(0) scale(0.96);
+        }
+
+        .inline-help-btn i {
+            font-size: 0.88rem;
+            color: inherit !important;
+        }
+
+        .back-nav {
+            margin-top: 2.6rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .back-link {
+            color: #ffffff !important;
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+            border: none !important;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 0.92rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+            box-shadow: 0 6px 20px rgba(217, 119, 6, 0.38) !important;
+            user-select: none;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+
+        .back-link i {
+            font-size: 0.95rem;
+            color: #ffffff !important;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .back-link:hover {
+            background: linear-gradient(135deg, #b45309 0%, #92400e 100%) !important;
+            color: #ffffff !important;
+            box-shadow: 0 10px 30px rgba(217, 119, 6, 0.55) !important;
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .back-link:hover i {
+            transform: translateX(-5px) scale(1.2);
+        }
+
+        body[dir="ltr"] .back-link:hover i {
+            transform: translateX(5px) scale(1.2);
+        }
+
+        .back-link:active {
+            transform: translateY(0) scale(0.96);
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 26px;
+            margin-bottom: 8px;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        #main-copyright-text {
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: var(--muted);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .copyright-line-1 {
+            display: block;
+            color: var(--text-muted);
+        }
+
+        .copyright-line-2, .sahala-purple {
+            display: block;
+            color: var(--icon-purple, #d97706) !important;
+            font-weight: 800;
+        }
+
+        @media (min-width: 540px) {
+            #main-copyright-text {
+                flex-direction: row;
+                gap: 8px;
+            }
+            .copyright-line-1::after {
+                content: " — ";
+                opacity: 0.6;
+            }
+        }
+
+        /* Responsive Breakpoints - Zero Breakage Guarantee */
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+                background-attachment: scroll;
+            }
+            .container {
+                padding: 2.6rem 1.4rem 2rem 1.4rem;
+                border-radius: 18px;
+            }
+            .brand-banner-header {
+                margin: -2.6rem -1.4rem 1.8rem -1.4rem !important;
+                padding: 18px 16px 16px 16px !important;
+            }
+            .brand-banner-header .brand-logo {
+                max-width: 145px !important;
+                max-height: 46px !important;
+            }
+            h1 {
+                font-size: 1.55rem;
+            }
+            .last-update {
+                font-size: 0.78rem;
+                margin-bottom: 1.6rem;
+            }
+            section {
+                margin-bottom: 1.8rem;
+            }
+            .section-heading {
+                font-size: 1.08rem;
+                gap: 10px;
+                margin-bottom: 0.7rem;
+            }
+            .section-icon-badge {
+                width: 28px;
+                height: 28px;
+                font-size: 0.86rem;
+                border-radius: 8px;
+            }
+            p {
+                font-size: 0.88rem;
+                line-height: 1.72;
+            }
+            .inline-help-btn {
+                padding: 7px 16px;
+                font-size: 0.82rem;
+            }
+            .back-nav {
+                margin-top: 2rem;
+                padding-top: 1.5rem;
+            }
+            .back-link {
+                padding: 11px 22px;
+                font-size: 0.88rem;
+                width: 100%;
+                max-width: 290px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            body {
+                padding: 10px 8px;
+            }
+            .container {
+                padding: 2.2rem 1rem 1.6rem 1rem;
+                border-radius: 14px;
+            }
+            .brand-banner-header {
+                margin: -2.2rem -1rem 1.5rem -1rem !important;
+                padding: 15px 12px 14px 12px !important;
+            }
+            .brand-banner-header .brand-logo {
+                max-width: 130px !important;
+                max-height: 42px !important;
+            }
+            h1 {
+                font-size: 1.35rem;
+            }
+            .last-update {
+                font-size: 0.72rem;
+            }
+            .section-heading {
+                font-size: 0.98rem;
+                gap: 8px;
+            }
+            .section-icon-badge {
+                width: 25px;
+                height: 25px;
+                font-size: 0.78rem;
+            }
+            p {
+                font-size: 0.82rem;
+                line-height: 1.65;
+            }
+            .inline-help-btn {
+                padding: 6px 14px;
+                font-size: 0.78rem;
+            }
+            .back-link {
+                padding: 10px 18px;
+                font-size: 0.82rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hidden controls per user request -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" type="button" style="display: none !important;" aria-hidden="true"></button>
+        <button id="langBtn" class="lang-pill lang-pill-left" style="display: none !important;" aria-hidden="true"></button>
+
+        <!-- Dark Purple Header Banner - Flush with container top, right, and left -->
+        <div class="brand-banner-header">
+            <img src="https://cdn.sahalacompany.com/sahaladark.webp" alt="Sahala Logo" class="brand-logo" id="page-logo-img">
+        </div>
+
+        <header>
+            <h1 data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</h1>
+            <p class="last-update" data-ar="خاص بمنتجات منصة سهالة التقنية - 2026" data-en="For Sahala Technical Platform Products - 2026">خاص بمنتجات منصة سهالة التقنية - 2026</p>
+        </header>
+
+        <section>
+            <h2 class="section-heading">
+                <span class="section-icon-badge"><i class="fas fa-info-circle"></i></span>
+                <span class="section-heading-text" data-ar="1. المعلومات التي نجمعها" data-en="1. Information We Collect">1. المعلومات التي نجمعها</span>
+            </h2>
+            <p data-ar="نحن نجمع المعلومات التي تزودنا بها مباشرة عند استخدامك لوحة التحكم الإدارية، مثل البيانات الشخصية عند إنشاء الحساب، تحديث كتالوج المنتجات، أو إدارة الطلبات والمبيعات الخاصة بمتجرك."
+               data-en="We collect information you provide directly to us when you use the Admin Panel, such as personal data when you create an account, update product catalog, or manage orders and sales for your store.">
+                نحن نجمع المعلومات التي تزودنا بها مباشرة عند استخدامك لوحة التحكم الإدارية، مثل البيانات الشخصية عند إنشاء الحساب، تحديث كتالوج المنتجات، أو إدارة الطلبات والمبيعات الخاصة بمتجرك.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-heading">
+                <span class="section-icon-badge"><i class="fas fa-user-check"></i></span>
+                <span class="section-heading-text" data-ar="2. كيف نستخدم معلوماتك" data-en="2. How We Use Your Information">2. كيف نستخدم معلوماتك</span>
+            </h2>
+            <p data-ar="نستخدم المعلومات التي نجمعها لتشغيل النظام، صيانته، وتوفير الميزات المتقدمة للخدمة، بالإضافة إلى التواصل معك لضمان أمان وفعالية بوابة الإدارة الخاصة بك."
+               data-en="We use the information we collect to operate, maintain, and provide the features of the Service, and to communicate with you to ensure the security and efficiency of your admin portal.">
+                نستخدم المعلومات التي نجمعها لتشغيل النظام، صيانته، وتوفير الميزات المتقدمة للخدمة، بالإضافة إلى التواصل معك لضمان أمان وفعالية بوابة الإدارة الخاصة بك.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-heading">
+                <span class="section-icon-badge"><i class="fas fa-shield-alt"></i></span>
+                <span class="section-heading-text" data-ar="3. أمن البيانات" data-en="3. Data Security">3. أمن البيانات</span>
+            </h2>
+            <p data-ar="نطبق مجموعة واسعة من التدابير الأمنية الصارمة للحفاظ على سلامة معلوماتك. يتم تشفير كافة البيانات الحساسة ونقلها عبر تقنية (SSL) الآمنة وتخزينها في قواعد بيانات محمية."
+               data-en="We implement a wide range of strict security measures to maintain the safety of your information. All sensitive data is encrypted and transmitted via secure SSL technology and stored in protected databases.">
+                نطبق مجموعة واسعة من التدابير الأمنية الصارمة للحفاظ على سلامة معلوماتك. يتم تشفير كافة البيانات الحساسة ونقلها عبر تقنية (SSL) الآمنة وتخزينها في قواعد بيانات محمية.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-heading">
+                <span class="section-icon-badge"><i class="fas fa-headset"></i></span>
+                <span class="section-heading-text" data-ar="4. اتصل بنا" data-en="4. Contact Us">4. اتصل بنا</span>
+            </h2>
+            <p data-ar="إذا كانت لديك أي استفسارات تتعلق بسياسة الخصوصية هذه، يسعدنا تواصلك مع فريق منصة سهالة التقني مباشرة عبر مركز المساعدة المخصص."
+               data-en="If you have any questions regarding this Privacy Policy, please contact the Sahala Technical Team directly via the dedicated Help Center.">
+                إذا كانت لديك أي استفسارات تتعلق بسياسة الخصوصية هذه، يسعدنا تواصلك مع فريق منصة سهالة التقني مباشرة عبر مركز المساعدة المخصص.
+            </p>
+            <div class="help-center-cta">
+                <a href="help.html" class="inline-help-btn" title="الانتقال لمركز المساعدة والدعم">
+                    <i class="fas fa-life-ring"></i>
+                    <span data-ar="زيارة مركز المساعدة ↗" data-en="Visit Help Center ↗">زيارة مركز المساعدة ↗</span>
+                </a>
+            </div>
+        </section>
+
+        <div class="back-nav">
+            <a href="login.html" class="back-link" data-ar="العودة لتسجيل الدخول" data-en="Back to Login">
+                <i class="fas fa-arrow-right"></i> <span>العودة لتسجيل الدخول</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p id="main-copyright-text">
+            <span class="copyright-line-1" data-ar="جميع الحقوق محفوظة © 2026" data-en="All rights reserved © 2026">جميع الحقوق محفوظة © 2026</span>
+            <span class="sahala-purple copyright-line-2" data-ar="منصة سهالة — Sahala Platform" data-en="Sahala Platform">منصة سهالة — Sahala Platform</span>
+        </p>
+    </footer>
+
+    <script>
+        const langBtn = document.getElementById('langBtn');
+
+        function updateLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            localStorage.setItem('adminLang', lang);
+            if (langBtn) {
+                const langSpan = langBtn.querySelector('span');
+                if (langSpan) langSpan.textContent = lang === 'ar' ? 'EN' : 'AR';
+            }
+
+            document.querySelectorAll('[data-ar]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) {
+                    const textSpan = el.querySelector('span');
+                    if (textSpan) textSpan.textContent = text;
+                    else el.textContent = text;
+                }
+            });
+
+            // Adjust back icon for English
+            const backIcon = document.querySelector('.back-link i');
+            if (backIcon) {
+                backIcon.className = lang === 'ar' ? 'fas fa-arrow-right' : 'fas fa-arrow-left';
+            }
+        }
+
+        if (langBtn) {
+            langBtn.addEventListener('click', () => {
+                const currentLang = document.documentElement.getAttribute('lang') || 'ar';
+                updateLanguage(currentLang === 'ar' ? 'en' : 'ar');
+            });
+        }
+
+        // Init from storage
+        const savedLang = localStorage.getItem('adminLang') || 'ar';
+        updateLanguage(savedLang);
+
+        // Smart Back Link Detection
+        (function() {
+            const backBtn = document.querySelector('.back-link');
+            if (!backBtn) return;
+            const isAr = (localStorage.getItem('adminLang') || 'ar') === 'ar';
+            const isLoggedIn = sessionStorage.getItem('admin_logged_out') !== 'true';
+
+            if (isLoggedIn) {
+                backBtn.href = 'dashboard.html' + (window.location.search || '');
+                backBtn.onclick = function(e) {
+                    if (window.opener && !window.opener.closed) {
+                        e.preventDefault();
+                        window.close();
+                    }
+                };
+                const span = backBtn.querySelector('span');
+                if (span) span.textContent = isAr ? 'الرجوع إلى لوحة التحكم' : 'Back to Dashboard';
+                backBtn.setAttribute('data-ar', 'الرجوع إلى لوحة التحكم');
+                backBtn.setAttribute('data-en', 'Back to Dashboard');
+            }
+        })();
+
+        // Theme Toggle Functionality
+        (function() {
+            const themeBtn = document.getElementById('themeToggleBtn');
+            function applyTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                const logoImg = document.getElementById('page-logo-img');
+                if (theme === 'light') {
+                    document.body.classList.add('light-mode');
+                    if (themeBtn) themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+                } else {
+                    document.body.classList.remove('light-mode');
+                    if (themeBtn) themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+                }
+                // Logo in the dark purple banner always stays dark-theme logo for contrast
+                if (logoImg) logoImg.src = 'https://cdn.sahalacompany.com/sahaladark.webp';
+                localStorage.setItem('adminTheme', theme);
+            }
+
+            const savedTheme = localStorage.getItem('adminTheme') || 'dark';
+            applyTheme(savedTheme);
+
+            if (themeBtn) {
+                themeBtn.addEventListener('click', function() {
+                    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+                    applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+                });
+            }
+        })();
+
+        // Scroll to Top Controller
+        (function() {
+            const btn = document.getElementById('btnScrollToTop');
+            if (!btn) return;
+            function onScroll() {
+                const fullPageThreshold = Math.max(550, Math.floor((window.innerHeight || 600) * 0.85));
+                if ((window.pageYOffset || document.documentElement.scrollTop || 0) > fullPageThreshold) {
+                    btn.classList.add('show');
+                } else {
+                    btn.classList.remove('show');
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            onScroll();
+        })();
+    </script>
+
+    <!-- Floating Back to Top Button matching user's icon specification -->
+    <button id="btnScrollToTop" class="scroll-to-top-btn" type="button" aria-label="الصعود لأعلى الصفحة" data-ar-aria-label="الصعود لأعلى الصفحة" data-en-aria-label="Scroll to Top" title="الصعود لأعلى الصفحة" data-ar-title="الصعود لأعلى الصفحة" data-en-title="Scroll to Top">
+        <svg viewBox="0 0 24 24" class="scroll-arrow-icon" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+</body>
+</html>

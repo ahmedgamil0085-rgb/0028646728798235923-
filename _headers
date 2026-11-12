@@ -1,0 +1,16 @@
+# Cloudflare Pages Security Headers & Access Control
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Revalidate HTML, CSS, and JS on every load while allowing conditional ETag caching
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/*.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.js
+  Cache-Control: public, max-age=0, must-revalidate
